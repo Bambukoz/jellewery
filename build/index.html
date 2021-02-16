@@ -16,8 +16,76 @@
   </head>
 
   <body class="page js-page">
-    <header class="page__header header">
-
+    <header class="page__header header header--nojs js-header">
+      <div class="header__container header__container--top">
+        <button class="btn btn__burger js-btn-menu" aria-label="Открыть или закрыть меню">
+          <svg class="btn btn__img" width="25" height="18">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Type here to search</label>
+          <input id="search" type="search" placeholder="Type here to search">
+          <button class="btn btn__search" type="submit">
+            <svg class="btn btn__img" width="14" height="14">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <a class="logo" aria-label="CH Logo">
+          <svg class="logo__img" width="66" height="66">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="user-nav">
+          <li class="user-nav__item user-nav__item--login">
+            <a href="#">Login</a>
+          </li>
+          <li class="user-nav__item user-nav__item--cart">
+            <a href="#">
+              <span>Cart&ensp;</span><span id="cart-quantity">0</span>
+              <svg class="btn btn__img" width="20" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__container header__container--bottom">
+        <nav class="nav">
+          <ul class="nav__list nav__list--desktop">
+            <li class="nav__item">
+              <a href="#">What’s new</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Chokers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Necklaces</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Rings</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Earrings</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--tablet">
+            <li class="nav__item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="nav__item nav__item--login">
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page__main main">
@@ -28,21 +96,21 @@
 
     </footer>
 
-<!--    <section class="login login&#45;&#45;modal js-modal">-->
-<!--      <div class="login__success">-->
-<!--        <p>Добро пожаловать :)</p>-->
-<!--      </div>-->
-<!--      <h2>LogIn</h2>-->
-<!--      <form class="form form&#45;&#45;modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">-->
-<!--        <label class="visually-hidden" for="modalEmail"></label>-->
-<!--        <input id="modalEmail" name="email" type="email" placeholder="Имя" required>-->
-<!--        <label class="visually-hidden" for="modalPassword"></label>-->
-<!--        <input id="modalPassword" name="password" type="password" placeholder="Имя" required>-->
-<!--        <button class="btn btn__submit btn__modal" type="submit">Отправить</button>-->
-<!--      </form>-->
-<!--      <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>-->
-<!--    </section>-->
-<!--    <div class="overlay js-overlay"></div>-->
+    <!--    <section class="login login--modal js-modal">-->
+    <!--      <div class="login__success">-->
+    <!--        <p>Добро пожаловать :)</p>-->
+    <!--      </div>-->
+    <!--      <h2>LogIn</h2>-->
+    <!--      <form class="form form&#45;&#45;modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">-->
+    <!--        <label class="visually-hidden" for="modalEmail"></label>-->
+    <!--        <input id="modalEmail" name="email" type="email" placeholder="Имя" required>-->
+    <!--        <label class="visually-hidden" for="modalPassword"></label>-->
+    <!--        <input id="modalPassword" name="password" type="password" placeholder="Имя" required>-->
+    <!--        <button class="btn btn__submit btn__modal" type="submit">Отправить</button>-->
+    <!--      </form>-->
+    <!--      <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>-->
+    <!--    </section>-->
+    <!--    <div class="overlay js-overlay"></div>-->
 
     <!--<script src="js/vendor.js"></script>-->
     <script src="js/main.js"></script>

@@ -1,0 +1,108 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+
+  @include mobile {
+    padding-top: 13px;
+  }
+
+  &--open {
+    @include tablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+    }
+  }
+
+  &--nojs {
+    @include tablet {
+      background-color: $color-primary;
+    }
+  }
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  max-width: 1500px;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+
+  &--top {
+    width: 87.1%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 18px;
+
+    @include tablet {
+      width: 88.6%;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+
+    @include mobile {
+      width: 91%;
+    }
+  }
+
+  &--bottom {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $border-color-gray;
+    padding-top: 9px;
+    padding-bottom: 8px;
+
+    @include tablet {
+      width: 88.3%;
+      display: none;
+      border-top: none;
+      flex-direction: column;
+      padding-top: 16px;
+      padding-bottom: 75px;
+    }
+
+    @include mobile {
+      width: 91%;
+      padding-top: 6px;
+      padding-bottom: 45px;
+    }
+  }
+}
+
+.header--open + .main,
+.header--open + .footer {
+  visibility: hidden;
+}
+
+.header--open .search-form,
+.header--nojs .search-form {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.header--open .header__container--bottom,
+.header--nojs .header__container--bottom {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.header--open .btn__img,
+.header--nojs .btn__img,
+.header--open .logo__img,
+.header--nojs .logo__img {
+  @include tablet {
+    color: $color-white;
+  }
+}
+
+.header--nojs .btn__burger {
+  display: none;
+}

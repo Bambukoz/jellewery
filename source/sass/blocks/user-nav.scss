@@ -1,0 +1,56 @@
+.user-nav {
+  @include list-reset;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2px;
+
+  @include tablet {
+    position: absolute;
+    top: 14px;
+    right: -10px;
+    width: 40px;
+    margin: 0;
+  }
+}
+
+.user-nav__item {
+  @include style-reset;
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.user-nav a {
+  display: block;
+  font-family: $font-family-secondary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-main-black;
+  padding: 10px;
+}
+
+.user-nav__item--login {
+  @include tablet {
+    display: none;
+  }
+}
+
+.user-nav__item--cart span {
+  @include tablet {
+    display: none;
+  }
+}
+
+.user-nav__item--cart svg {
+  display: none;
+
+  @include tablet {
+    display: block;
+    fill: transparent;
+  }
+}

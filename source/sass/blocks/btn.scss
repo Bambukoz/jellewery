@@ -1,0 +1,43 @@
+.btn {
+  @include btn-reset;
+}
+
+.btn__burger {
+  display: none;
+
+  @include tablet {
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    top: 13px;
+    left: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn__search {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+
+  @include tablet {
+    top: 12px;
+    left: 13px;
+  }
+}
+
+.btn__search svg {
+  width: 14px;
+  height: 14px;
+
+  @include tablet {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn__img {
+  color: $color-main-black;
+}

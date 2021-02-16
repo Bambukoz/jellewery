@@ -1,0 +1,21 @@
+.logo {
+  line-height: 0;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    margin-bottom: 23px;
+  }
+}
+
+.logo__img {
+  width: 66px;
+  height: 66px;
+  color: $color-primary;
+
+  @include mobile {
+    width: 52px;
+  }
+}

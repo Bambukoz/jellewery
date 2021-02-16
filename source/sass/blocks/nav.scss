@@ -1,0 +1,100 @@
+.nav {
+  width: 50%;
+  display: flex;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
+
+.nav__list {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  &--desktop {
+    @include tablet {
+      margin-bottom: 39px;
+    }
+
+    @include mobile {
+      margin-bottom: 29px;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.nav__list a {
+  display: block;
+  font-family: $font-family-secondary;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-main-black;
+  padding: 10px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0;
+    color: $color-white;
+  }
+}
+
+.nav__list--tablet a {
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.75;
+}
+
+.nav__item {
+  @include style-reset;
+  margin-right: 15px;
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}
+
+.nav__item ~ .nav__item--login {
+  @include tablet {
+    margin-top: 23px;
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-top: 13px;
+  }
+}
