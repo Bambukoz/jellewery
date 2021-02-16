@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Expensive jewelry store">
+    <title>Проект Акселератора - "Jewellery"</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font">
+    <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font">
+    <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-regular.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-bold.woff2" as="font">
+  </head>
+
+  <body class="page js-page">
+    <header class="page__header header header--nojs js-header">
+      <div class="header__container header__container--top">
+        <button class="btn btn__burger js-btn-menu" aria-label="Открыть или закрыть меню">
+          <svg class="btn btn__img" width="25" height="18">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <form class="form form__search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Type here to search</label>
+          <input id="search" type="search" placeholder="Type here to search">
+          <button class="btn btn__search" type="submit" aria-label="Search">
+            <svg class="btn btn__img" width="14" height="14">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <a class="logo" aria-label="CH Logo">
+          <svg class="logo__img" width="66" height="66">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="user-nav">
+          <li class="user-nav__item user-nav__item--login">
+            <a href="#">Login</a>
+          </li>
+          <li class="user-nav__item user-nav__item--cart">
+            <a href="#" aria-label="Cart">
+              <span>Cart&ensp;</span><span id="cart-quantity">0</span>
+              <svg class="btn btn__img" width="20" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__container header__container--bottom">
+        <nav class="nav">
+          <ul class="nav__list nav__list--desktop">
+            <li class="nav__item">
+              <a href="#">What’s new</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Chokers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Necklaces</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Rings</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Earrings</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--tablet">
+            <li class="nav__item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="nav__item nav__item--login">
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page__main main">
+
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="footer__wrapper">
+        <div class="footer__container footer__container--submit">
+          <h2>The good stuff in your inbox </h2>
+          <p>News and updates from CH. No spam, we promise.</p>
+          <form class="form form__submit" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="submit"></label>
+            <input id="submit" type="email" name="email" placeholder="Your E-mail" required="">
+            <button class="btn btn__submit" type="submit">
+              Sign Up
+              <svg width="30" height="11">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="footer__container footer__container--nav">
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="#">Ordering & Payment</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Returns & Exchanges</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Delivery</a>
+            </li>
+          </ul>
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Jobs</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container footer__container--social">
+          <ul class="footer-nav footer-nav--social">
+            <li class="footer-nav__item">
+              <a href="#" aria-label="Facebook">
+                <svg width="8" height="15">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" aria-label="Instagram">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" aria-label="Pinterest">
+                <svg width="16" height="15">
+                  <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <span>Pinterest</span>
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" aria-label="Twitter">
+                <svg width="15" height="13">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--    <section class="login login--modal js-modal">-->
+    <!--      <div class="login__success">-->
+    <!--        <p>Добро пожаловать :)</p>-->
+    <!--      </div>-->
+    <!--      <h2>LogIn</h2>-->
+    <!--      <form class="form form&#45;&#45;modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">-->
+    <!--        <label class="visually-hidden" for="modalEmail"></label>-->
+    <!--        <input id="modalEmail" name="email" type="email" placeholder="Имя" required>-->
+    <!--        <label class="visually-hidden" for="modalPassword"></label>-->
+    <!--        <input id="modalPassword" name="password" type="password" placeholder="Имя" required>-->
+    <!--        <button class="btn btn__submit btn__modal" type="submit">Отправить</button>-->
+    <!--      </form>-->
+    <!--      <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>-->
+    <!--    </section>-->
+    <!--    <div class="overlay js-overlay"></div>-->
+    <!--<script src="js/vendor.js"></script>-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
