@@ -41,3 +41,20 @@
 .btn__img {
   color: $color-main-black;
 }
+
+.btn__submit {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  width: 103px;
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__submit svg {
+  width: 30px;
+  height: 11px;
+}

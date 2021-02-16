@@ -1,4 +1,4 @@
-.search-form {
+.form__search {
   position: relative;
   width: 35%;
   display: flex;
@@ -12,12 +12,9 @@
   }
 }
 
-.search-form input {
+.form__search input {
   width: 100%;
-  font-family: $font-family-secondary;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
   padding-left: 39px;
   color: $color-main-black;
   border: none;
@@ -52,5 +49,28 @@
     @include tablet {
       visibility: hidden;
     }
+  }
+}
+
+.form__submit {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.form__submit input {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $color-white;
+  border-radius: 0;
+  font-size: 14px;
+  color: $color-white;
+  background-color: transparent;
+  outline-offset: 3px;
+  padding: 8px 103px 11px 1px;
+
+  &::placeholder {
+    color: $color-gray;
   }
 }

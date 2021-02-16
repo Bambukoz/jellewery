@@ -75,9 +75,9 @@
   }
 }
 
-.header--open + .main,
-.header--open + .footer {
-  visibility: hidden;
+.header--open ~ main,
+.header--open ~ footer {
+  display: none;
 }
 
 .header--open .search-form,

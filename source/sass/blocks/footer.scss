@@ -1,0 +1,130 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $color-black;
+  padding-top: 90px;
+  padding-bottom: 94px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  @include mobile {
+    padding-bottom: 46px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 85.7%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+
+  @media (max-width: 1150px) {
+    width: 88.3%;
+  }
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+
+  @include mobile {
+    width: 90.9%;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+
+  &--submit {
+    width: 42.7%;
+    min-width: 415px;
+
+    @include tablet {
+      width: 82.6%;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+
+  &--nav {
+    width: 31.55%;
+    min-width: 312px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 11px;
+
+    @media (max-width: 1150px) {
+      padding-right: 0;
+    }
+
+    @include tablet {
+      min-width: 373px;
+      justify-content: flex-start;
+      margin-right: 84px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-width: auto;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  &--social {
+    min-width: 118px;
+    width: 10%;
+    margin-right: 0;
+
+    @include tablet {
+      margin-right: auto;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-width: auto;
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-left: -9px;
+    }
+  }
+}
+
+.footer__container h2 {
+  @include style-reset;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: $color-white;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+
+  @include mobile {
+    padding-right: 44px;
+    margin-bottom: 14px;
+  }
+}
+
+.footer__container p {
+  @include style-reset;
+  color: $color-gray;
+  font-weight: 400;
+  margin-bottom: 38px;
+
+  @include mobile {
+    padding-right: 44px;
+    margin-bottom: 36px;
+  }
+}
