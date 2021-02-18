@@ -58,3 +58,76 @@
   width: 30px;
   height: 11px;
 }
+
+.btn__slider {
+  position: absolute;
+  top: 164px;
+  width: 30px;
+  height: 18px;
+
+  @include tablet {
+    top: 109px;
+    width: 38px;
+    height: 20px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  &--right {
+    right: 1px;
+
+    @include tablet {
+      right: 6px;
+    }
+  }
+
+  &--left {
+    left: 1px;
+
+    @include tablet {
+      left: 6px;
+    }
+  }
+}
+
+.btn__slider svg {
+  color: $color-primary;
+
+  @include tablet {
+    width: 38px;
+    height: 21px;
+  }
+}
+
+.btn__faq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn__faq svg {
+  @include animation;
+  position: absolute;
+  top: 50px;
+  right: 48px;
+  fill: transparent;
+  color: $color-primary;
+
+  @include tablet {
+    width: 25px;
+    height: 18px;
+    top: 46px;
+    right: 48px;
+  }
+
+  @include mobile {
+    width: 22px;
+    height: 16px;
+    top: 21px;
+    right: 23px;
+  }
+}

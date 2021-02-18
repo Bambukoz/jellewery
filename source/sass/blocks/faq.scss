@@ -1,0 +1,96 @@
+.faq {
+  @include list-reset;
+  width: 82.9%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-primary;
+
+  @include tablet {
+    width: 98%;
+  }
+
+  @include mobile {
+    width: 90.5%;
+  }
+}
+
+.faq__item {
+  @include style-reset;
+  position: relative;
+  border-bottom: 1px solid $color-primary;
+  padding: 43px 392px 36px 43px;
+
+  @include tablet {
+    padding: 43px 45px 18px 48px;
+  }
+
+  @include mobile {
+    padding: 16px 53px 7px 24px;
+  }
+
+  &--active {
+    padding-bottom: 41px;
+
+    @include tablet {
+      padding-bottom: 44px;
+    }
+
+    @include mobile {
+      padding-bottom: 19px;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.faq__item h3 {
+  @include style-reset;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 26px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+}
+
+.faq__item p {
+  @include style-reset;
+  display: none;
+  margin-left: 4px;
+
+  @include tablet {
+    margin-left: 0;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.faq__item--active p {
+  display: inline-block;
+}
+
+.faq__item--active .btn__faq-icon {
+  @include animation;
+  transform: rotate(180deg);
+}
+
+.faq--nojs p {
+  display: inline-block;
+}
+
+.faq--nojs .btn__faq {
+  display: none;
+}

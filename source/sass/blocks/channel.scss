@@ -1,0 +1,92 @@
+.channel {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    width: 98%;
+  }
+
+  @include mobile {
+    width: 90.5%;
+    max-width: 290px;
+    flex-wrap: wrap;
+  }
+}
+
+.channel__item {
+  @include style-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--first {
+    width: 19.7%;
+    margin-right: 26px;
+
+    @include tablet {
+      width: 19.5%;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 44.9%;
+      min-height: 232px;
+      margin-bottom: 9px;
+    }
+  }
+
+  &--second {
+    width: 35%;
+    margin-right: 17px;
+
+    @include tablet {
+      width: 34%;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 50%;
+    }
+  }
+
+  &--third {
+    width: 20%;
+    margin-right: 8px;
+
+    @include tablet {
+      width: 19.1%;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
+  }
+
+  &--fourth {
+    width: 20%;
+    align-items: flex-end;
+
+    @include tablet {
+      width: 19.2%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.channel picture {
+  line-height: 0;
+}
+
+.channel__item img {
+  @include mobile {
+    width: auto;
+  }
+}

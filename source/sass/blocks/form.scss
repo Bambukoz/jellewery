@@ -7,14 +7,19 @@
   @include tablet {
     width: 100%;
     display: none;
-    margin-top: 0;
+    margin-top: 40px;
     order: 1;
+  }
+
+  @include mobile {
+    margin-top: 23px;
   }
 }
 
 .form__search input {
   width: 100%;
   font-size: 14px;
+  line-height: 20px;
   padding-left: 39px;
   color: $color-main-black;
   border: none;
@@ -25,7 +30,7 @@
     color: white;
     border-radius: 21px;
     padding-right: 17px;
-    padding-top: 9px;
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 

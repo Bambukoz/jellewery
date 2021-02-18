@@ -18,7 +18,7 @@
   <body class="page js-page">
     <header class="page__header header header--nojs js-header">
       <div class="header__container header__container--top">
-        <button class="btn btn__burger js-btn-menu" aria-label="Открыть или закрыть меню">
+        <button class="btn btn__burger js-btn-menu" aria-label="Open or close a menu">
           <svg class="btn btn__img" width="25" height="18">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
@@ -89,7 +89,435 @@
     </header>
 
     <main class="page__main main">
-
+      <section class="lead">
+        <h1>Perfection</h1>
+        <p>Made to be yours</p>
+      </section>
+      <section class="main__container main__container--products main__container--nojs js-main-container">
+        <h2>New In</h2>
+        <a href="#">Shop Now</a>
+        <button class="btn btn__slider btn__slider--left" type="button" aria-label="Prev slide">
+          <svg width="30" height="11">
+            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="btn btn__slider btn__slider--right" type="button" aria-label="Next slide">
+          <svg width="30" height="11">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <div class="products products--swiper">
+          <ul class="products__list swiper-wrapper">
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/purple-gemstone-necklace-mobile@1x.webp, img/jpg/products/purple-gemstone-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/purple-gemstone-necklace-tablet@1x.webp, img/jpg/products/purple-gemstone-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/purple-gemstone-necklace-desktop@1x.webp, img/jpg/products/purple-gemstone-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpg/products/purple-gemstone-necklace-desktop@1x.jpg" srcset="img/jpg/products/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace">
+                </picture>
+              </a>
+              <p>Necklace with amethyst</p>
+              <span>$ 145</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/layered-choker-necklace@1x.webp, img/jpg/products/layered-choker-necklace@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpg/products/layered-choker-necklace@1x.jpg" srcset="img/jpg/products/layered-choker-necklace@2x.jpg 2x" alt="Layered choker">
+                </picture>
+              </a>
+              <p>Layered сhoker</p>
+              <span>$ 115</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/dainty-gold-necklace@1x.webp, img/jpg/products/dainty-gold-necklace@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpg/products/dainty-gold-necklace@1x.jpg" srcset="img/jpg/products/dainty-gold-necklace@2x.jpg 2x" alt="Dainty gold">
+                </picture>
+              </a>
+              <p>Gold chain</p>
+              <span>$ 215</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/galaxy-earrings@1x.webp, img/jpg/products/galaxy-earrings@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpg/products/galaxy-earrings@1x.jpg" srcset="img/jpg/products/galaxy-earrings@2x.jpg 2x" alt="Galaxy earrings">
+                </picture>
+              </a>
+              <p>Galaxy earrings</p>
+              <span>$ 95</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/double-pearl-earrings-mobile@1x.webp, img/jpg/products/double-pearl-earrings-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/double-pearl-earrings-tablet@1x.webp, img/jpg/products/double-pearl-earrings-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/double-pearl-earrings-desktop@1x.webp, img/jpg/products/double-pearl-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/double-pearl-earrings-desktop@1x.jpg" srcset="img/jpg/products/double-pearl-earrings-desktop@2x.jpg 2x" alt="Double pearl earrings">
+                </picture>
+              </a>
+              <p>Double pearl earrings</p>
+              <span>$ 115</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/black-choker-gold-bead-mobile@1x.webp, img/jpg/products/black-choker-gold-bead-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/black-choker-gold-bead-tablet@1x.webp, img/jpg/products/black-choker-gold-bead-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/black-choker-gold-bead-desktop@1x.webp, img/jpg/products/black-choker-gold-bead-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpg/products/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead">
+                </picture>
+              </a>
+              <p>Choker with gold bead</p>
+              <span>$ 55</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/gold-layered-necklace-mobile@1x.webp, img/jpg/products/gold-layered-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/gold-layered-necklace-tablet@1x.webp, img/jpg/products/gold-layered-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/gold-layered-necklace-desktop@1x.webp, img/jpg/products/gold-layered-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/gold-layered-necklace-desktop@1x.jpg" srcset="img/jpg/products/gold-layered-necklace-desktop@2x.jpg 2x" alt="Gold layered necklace">
+                </picture>
+              </a>
+              <p>Gold layered necklace</p>
+              <span>$ 155</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/blue-gemstone-pendant-mobile@1x.webp, img/jpg/products/blue-gemstone-pendant-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/blue-gemstone-pendant-tablet@1x.webp, img/jpg/products/blue-gemstone-pendant-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/blue-gemstone-pendant-desktop@1x.webp, img/jpg/products/blue-gemstone-pendant-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/blue-gemstone-pendant-desktop@1x.jpg" srcset="img/jpg/products/blue-gemstone-pendant-desktop@2x.jpg 2x" alt="Blue gemstone pendant">
+                </picture>
+              </a>
+              <p>Blue gemstone pendant</p>
+              <span>$ 105</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/boho-earrings-mobile@1x.webp, img/jpg/products/boho-earrings-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/boho-earrings-tablet@1x.webp, img/jpg/products/boho-earrings-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/boho-earrings-desktop@1x.webp, img/jpg/products/boho-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/boho-earrings-desktop@1x.jpg" srcset="img/jpg/products/boho-earrings-desktop@2x.jpg 2x" alt="Boho earrings">
+                </picture>
+              </a>
+              <p>Boho earrings</p>
+              <span>$ 75</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/bird-necklace-mobile@1x.webp, img/jpg/products/bird-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/bird-necklace-tablet@1x.webp, img/jpg/products/bird-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/bird-necklace-desktop@1x.webp, img/jpg/products/bird-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/bird-necklace-desktop@1x.jpg" srcset="img/jpg/products/bird-necklace-desktop@2x.jpg 2x" alt="Gold bird necklace">
+                </picture>
+              </a>
+              <p>Gold bird necklace</p>
+              <span>$ 135</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/black-leather-choker-necklace-mobile@1x.webp, img/jpg/products/black-leather-choker-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/black-leather-choker-necklace-tablet@1x.webp, img/jpg/products/black-leather-choker-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/black-leather-choker-necklace-desktop@1x.webp, img/jpg/products/black-leather-choker-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/black-leather-choker-necklace-desktop@1x.jpg" srcset="img/jpg/products/black-leather-choker-necklace-desktop@2x.jpg 2x" alt="Black leather choker">
+                </picture>
+              </a>
+              <p>Black leather choker</p>
+              <span>$ 85</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/elephant-earrings-mobile@1x.webp, img/jpg/products/elephant-earrings-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/elephant-earrings-tablet@1x.webp, img/jpg/products/elephant-earrings-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/elephant-earrings-desktop@1x.webp, img/jpg/products/elephant-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/elephant-earrings-desktop@1x.jpg" srcset="img/jpg/products/elephant-earrings-desktop@2x.jpg 2x" alt="Elephant earrings">
+                </picture>
+              </a>
+              <p>Elephant earrings</p>
+              <span>$ 95</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/threader-necklace-closeup-mobile@1x.webp, img/jpg/products/threader-necklace-closeup-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/threader-necklace-closeup-tablet@1x.webp, img/jpg/products/threader-necklace-closeup-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/threader-necklace-closeup-desktop@1x.webp, img/jpg/products/threader-necklace-closeup-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/threader-necklace-closeup-desktop@1x.jpg" srcset="img/jpg/products/threader-necklace-closeup-desktop@2x.jpg 2x" alt="Threader necklace">
+                </picture>
+              </a>
+              <p>Threader necklace</p>
+              <span>$ 115</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/origami-crane-necklace-mobile@1x.webp, img/jpg/products/origami-crane-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/origami-crane-necklace-tablet@1x.webp, img/jpg/products/origami-crane-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/origami-crane-necklace-desktop@1x.webp, img/jpg/products/origami-crane-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/origami-crane-necklace-desktop@1x.jpg" srcset="img/jpg/products/origami-crane-necklace-desktop@2x.jpg 2x" alt="Origami crane necklace">
+                </picture>
+              </a>
+              <p>Origami crane necklace</p>
+              <span>$ 105</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a href="#">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/marble-earrings-mobile@1x.webp, img/jpg/products/marble-earrings-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/products/marble-earrings-tablet@1x.webp, img/jpg/products/marble-earrings-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpg/products/marble-earrings-desktop@1x.webp, img/jpg/products/marble-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="272" src="img/jpg/products/marble-earrings-desktop@1x.jpg" srcset="img/jpg/products/marble-earrings-desktop@2x.jpg 2x" alt="Marble earrings">
+                </picture>
+              </a>
+              <p>Marble earrings</p>
+              <span>$ 95</span>
+            </li>
+          </ul>
+        </div>
+        <div class="products__pagination"></div>
+      </section>
+      <section class="main__container main__container--blog">
+        <h2>Blog</h2>
+        <a href="#">Read All</a>
+        <div class="blog">
+          <article class="blog__item blog__item--pic-left">
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/blog/jess-harper-sunday-mobile@1x.webp, img/jpg/blog/jess-harper-sunday-mobile@2x.webp 2x">
+              <!-- 1x: 339px; 2x: 678px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/blog/jess-harper-sunday-tablet@1x.webp, img/jpg/blog/jess-harper-sunday-tablet@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <source type="image/webp" srcset="img/jpg/blog/jess-harper-sunday-desktop@1x.webp, img/jpg/blog/jess-harper-sunday-desktop@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <img width="285" height="300" src="img/jpg/blog/jess-harper-sunday-desktop@1x.jpg" srcset="img/jpg/blog/jess-harper-sunday-desktop@2x.jpg 2x" alt="How to care for your jewellery">
+            </picture>
+            <div class="blog__container">
+              <time datetime="2019-09-30">September 30, 2019</time>
+              <h2>How to care for your jewellery</h2>
+              <a href="#">Read Article</a>
+            </div>
+          </article>
+          <article class="blog__item blog__item--pic-right">
+            <div class="blog__container">
+              <time datetime="2019-09-23">September 23, 2019</time>
+              <h2>Power of crystals</h2>
+              <a href="#">Read Article</a>
+            </div>
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/blog/alex-holyoake-mobile@1x.webp, img/jpg/blog/alex-holyoake-mobile@2x.webp 2x">
+              <!-- 1x: 339px; 2x: 678px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/blog/alex-holyoake-tablet@1x.webp, img/jpg/blog/alex-holyoake-tablet@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <source type="image/webp" srcset="img/jpg/blog/alex-holyoake-desktop@1x.webp, img/jpg/blog/alex-holyoake-desktop@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <img width="285" height="300" src="img/jpg/blog/alex-holyoake-desktop@1x.jpg" srcset="img/jpg/blog/alex-holyoake-desktop@2x.jpg 2x" alt="Power of crystals">
+            </picture>
+          </article>
+          <article class="blog__item blog__item--big">
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/blog/alve-odonnell-mobile@1x.webp, img/jpg/blog/alve-odonnell-mobile@2x.webp 2x">
+              <!-- 1x: 339px; 2x: 678px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/blog/alve-odonnell-tablet@1x.webp, img/jpg/blog/alve-odonnell-tablet@2x.webp 2x">
+              <!-- 1x: 570px; 2x: 1140px -->
+              <source type="image/webp" srcset="img/jpg/blog/alve-odonnell-desktop@1x.webp, img/jpg/blog/alve-odonnell-desktop@2x.webp 2x">
+              <!-- 1x: 570px; 2x: 1140px -->
+              <img width="570" height="630" src="img/jpg/blog/alve-odonnell-desktop@1x.jpg" srcset="img/jpg/blog/alve-odonnell-desktop@2x.jpg 2x" alt="How to care for your jewellery">
+            </picture>
+            <div class="blog__container blog__container--big">
+              <time datetime="2019-09-16">September 16, 2019</time>
+              <h2>AW 19 trends</h2>
+              <a href="#">Read Article</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main__container main__container--faq main__container--nojs js-main-container">
+        <h2>Frequently asked questions</h2>
+        <ul class="faq faq--nojs js-faq">
+          <li class="faq__item">
+            <button class="btn btn__faq js-btn-faq" type="button" aria-label="Open or close a response">
+              <svg class="btn__faq-icon" width="17" height="10">
+                <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+              </svg>
+            </button>
+            <h3>What materials are the&nbsp;jewellery made of?</h3>
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </li>
+          <li class="faq__item">
+            <button class="btn btn__faq js-btn-faq" type="button" aria-label="Open or close a response">
+              <svg class="btn__faq-icon" width="17" height="10">
+                <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+              </svg>
+            </button>
+            <h3>Which countries do&nbsp;you&nbsp;deliver to?</h3>
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </li>
+          <li class="faq__item">
+            <button class="btn btn__faq js-btn-faq" type="button" aria-label="Open or close a response">
+              <svg class="btn__faq-icon" width="17" height="10">
+                <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+              </svg>
+            </button>
+            <h3>What are the payment&nbsp;methods?</h3>
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </li>
+          <li class="faq__item">
+            <button class="btn btn__faq js-btn-faq" type="button" aria-label="Open or close a response">
+              <svg class="btn btn__faq-icon" width="17" height="10">
+                <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+              </svg>
+            </button>
+            <h3>Can I return the jewellery&nbsp;if it didn’t fit me?</h3>
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__container main__container--channel">
+        <h2>@Chjewellery</h2>
+        <a href="#">Follow Us</a>
+        <ul class="channel">
+          <li class="channel__item channel__item--first">
+            <picture>
+              <!-- 1x: 130px; 2x: 260px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/photos/8-photo-mobile@1x.webp, img/jpg/photos/8-photo-mobile@2x.webp 2x">
+              <!-- 1x: 133px; 2x: 266px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/8-photo-tablet@1x.webp, img/jpg/photos/8-photo-tablet@2x.webp 2x">
+              <!-- 1x: 230px; 2x: 460px -->
+              <source type="image/webp" srcset="img/jpg/photos/8-photo-desktop@1x.webp, img/jpg/photos/8-photo-desktop@2x.webp 2x">
+              <!-- 1x: 230px; 2x: 460px -->
+              <img width="230" height="230" src="img/jpg/photos/8-photo-desktop@1x.jpg" srcset="img/jpg/photos/8-photo-desktop@2x.jpg 2x" alt="Photo 8">
+            </picture>
+            <picture>
+              <!-- 1x: 130px; 2x: 260px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/photos/1-photo-mobile@1x.webp, img/jpg/photos/1-photo-mobile@2x.webp 2x">
+              <!-- 1x: 133px; 2x: 266px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/1-photo-tablet@1x.webp, img/jpg/photos/1-photo-tablet@2x.webp 2x">
+              <!-- 1x: 230px; 2x: 460px -->
+              <source type="image/webp" srcset="img/jpg/photos/1-photo-desktop@1x.webp, img/jpg/photos/1-photo-desktop@2x.webp 2x">
+              <!-- 1x: 230px; 2x: 460px -->
+              <img width="230" height="154" src="img/jpg/photos/1-photo-desktop@1x.jpg" srcset="img/jpg/photos/1-photo-desktop@2x.jpg 2x" alt="Photo 1">
+            </picture>
+          </li>
+          <li class="channel__item channel__item--second">
+            <picture>
+              <!-- 1x: 145px; 2x: 290px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/photos/2-photo-mobile@1x.webp, img/jpg/photos/2-photo-mobile@2x.webp 2x">
+              <!-- 1x: 133px; 2x: 266px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/2-photo-tablet@1x.webp, img/jpg/photos/2-photo-tablet@2x.webp 2x">
+              <!-- 1x: 400px; 2x: 800px -->
+              <source type="image/webp" srcset="img/jpg/photos/2-photo-desktop@1x.webp, img/jpg/photos/2-photo-desktop@2x.webp 2x">
+              <!-- 1x: 400px; 2x: 800px -->
+              <img width="400" height="414" src="img/jpg/photos/2-photo-desktop@1x.jpg" srcset="img/jpg/photos/2-photo-desktop@2x.jpg 2x" alt="Photo 2">
+            </picture>
+          </li>
+          <li class="channel__item channel__item--third">
+            <picture>
+              <!-- 1x: 145px; 2x: 290px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/photos/4-photo-mobile@1x.webp, img/jpg/photos/4-photo-mobile@2x.webp 2x">
+              <!-- 1x: 231px; 2x: 462px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/4-photo-tablet@1x.webp, img/jpg/photos/4-photo-tablet@2x.webp 2x">
+              <!-- 1x: 232px; 2x: 464px -->
+              <source type="image/webp" srcset="img/jpg/photos/4-photo-desktop@1x.webp, img/jpg/photos/4-photo-desktop@2x.webp 2x">
+              <!-- 1x: 232px; 2x: 464px -->
+              <img width="232" height="193" src="img/jpg/photos/4-photo-desktop@1x.jpg" srcset="img/jpg/photos/4-photo-desktop@2x.jpg 2x" alt="Photo 4">
+            </picture>
+            <picture>
+              <!-- 1x: 130px; 2x: 260px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/photos/5-photo-mobile@1x.webp, img/jpg/photos/5-photo-mobile@2x.webp 2x">
+              <!-- 1x: 126px; 2x: 252px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/5-photo-tablet@1x.webp, img/jpg/photos/5-photo-tablet@2x.webp 2x">
+              <!-- 1x: 218px; 2x: 436px -->
+              <source type="image/webp" srcset="img/jpg/photos/5-photo-desktop@1x.webp, img/jpg/photos/5-photo-desktop@2x.webp 2x">
+              <!-- 1x: 218px; 2x: 436px -->
+              <img width="218" height="191" src="img/jpg/photos/5-photo-desktop@1x.jpg" srcset="img/jpg/photos/5-photo-desktop@2x.jpg 2x" alt="Photo 5">
+            </picture>
+          </li>
+          <li class="channel__item channel__item--fourth">
+            <picture>
+              <!-- 1x: 126px; 2x: 252px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/6-photo-tablet@1x.webp, img/jpg/photos/6-photo-tablet@2x.webp 2x">
+              <!-- 1x: 218px; 2x: 436px -->
+              <source type="image/webp" srcset="img/jpg/photos/6-photo-desktop@1x.webp, img/jpg/photos/6-photo-desktop@2x.webp 2x">
+              <!-- 1x: 218px; 2x: 436px -->
+              <img width="218" height="218" src="img/jpg/photos/6-photo-desktop@1x.jpg" srcset="img/jpg/photos/6-photo-desktop@2x.jpg 2x" alt="Photo 6">
+            </picture>
+            <picture>
+              <!-- 1x: 134px; 2x: 268px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/photos/7-photo-tablet@1x.webp, img/jpg/photos/7-photo-tablet@2x.webp 2x">
+              <!-- 1x: 232px; 2x: 464px -->
+              <source type="image/webp" srcset="img/jpg/photos/7-photo-desktop@1x.webp, img/jpg/photos/7-photo-desktop@2x.webp 2x">
+              <!-- 1x: 232px; 2x: 464px -->
+              <img width="232" height="166" src="img/jpg/photos/7-photo-desktop@1x.jpg" srcset="img/jpg/photos/7-photo-desktop@2x.jpg 2x" alt="Photo 7">
+            </picture>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="page__footer footer">
@@ -191,7 +619,7 @@
     <!--      <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>-->
     <!--    </section>-->
     <!--    <div class="overlay js-overlay"></div>-->
-    <!--<script src="js/vendor.js"></script>-->
+    <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
