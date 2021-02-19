@@ -99,6 +99,12 @@ gulp.task('js', function () {
         rules: [
           {
             exclude: '/node-modules/',
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+              }
+            },
           },
         ],
       },

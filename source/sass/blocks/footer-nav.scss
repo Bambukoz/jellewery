@@ -89,3 +89,14 @@
     margin-right: 0;
   }
 }
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  @include animation;
+  opacity: 0.7;
+}
+
+.footer-nav a:active {
+  @include animation;
+  opacity: 0.3;
+}

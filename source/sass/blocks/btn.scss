@@ -14,6 +14,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:active {
+      @include animation;
+      color: $color-primary;
+    }
   }
 }
 
@@ -25,6 +30,27 @@
   @include tablet {
     top: 12px;
     left: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    @include animation;
+    color: $color-primary;
+    opacity: 0.7;
+
+    @include tablet {
+      color: $color-white;
+    }
+  }
+
+  &:active {
+    @include animation;
+    color: $color-primary;
+    opacity: 1;
+
+    @include tablet {
+      color: $color-white;
+    }
   }
 }
 
@@ -101,21 +127,37 @@
   }
 }
 
-.btn__faq {
+.btn__slider svg:hover,
+.btn__slider svg:focus {
+  @include animation;
+  opacity: 0.7;
+}
+
+.btn__slider svg:active {
+  @include animation;
+  opacity: 0.5;
+}
+
+.btn__accordion {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
+
+  &--catalog {
+    height: 60px;
+  }
 }
 
-.btn__faq svg {
+.btn__accordion svg {
   @include animation;
   position: absolute;
   top: 50px;
   right: 48px;
   fill: transparent;
   color: $color-primary;
+  z-index: -1;
 
   @include tablet {
     width: 25px;
@@ -129,5 +171,124 @@
     height: 16px;
     top: 21px;
     right: 23px;
+  }
+}
+
+.btn__accordion--catalog svg {
+  top: 28px;
+  right: 23px;
+}
+
+.btn__accordion svg:hover,
+.btn__accordion svg:focus {
+  @include animation;
+  color: $color-main-black;
+}
+
+.btn__accordion svg:active {
+  @include animation;
+  color: $color-main-black;
+  opacity: 0.5;
+}
+
+//###### Catalog
+
+.btn__filter {
+  width: 100%;
+  min-height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &--submit {
+    margin-bottom: 25px;
+  }
+
+  &--reset {
+    background-color: transparent;
+    color: $color-main-black;
+  }
+
+  &--main {
+    display: none;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.btn__pagination {
+  background-color: transparent;
+  border: 0;
+  color: $color-gray;
+  cursor: pointer;
+  padding: 6px;
+
+  @include mobile {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &--active {
+    color: $color-main-black;
+  }
+}
+
+.btn__slider {
+  &--next {
+    width: 67px;
+    top: 6px;
+    right: 6px;
+
+    @include tablet {
+      top: 5px;
+      right: -11px;
+    }
+  }
+
+  &--prev {
+    width: 67px;
+    top: 6px;
+    left: 2px;
+
+    @include tablet {
+      top: 5px;
+      left: 5px;
+    }
+  }
+}
+
+.btn__close {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $color-main-black;
+  }
+}
+
+.btn__close svg {
+  color: $color-white;
+
+  @include mobile {
+    width: 14px;
+    height: 14px;
   }
 }

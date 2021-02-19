@@ -4,8 +4,11 @@
   "description": "Проект Акселератора - Jewellery",
   "author": "Алексей Ежов <ezhov-a@yandex.ru>",
   "devDependencies": {
+    "@babel/core": "^7.12.x",
+    "@babel/preset-env": "^7.12.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
+    "babel-loader": "^8.2.x",
     "browser-sync": "2.26.x",
     "eslint": "4.16.0",
     "eslint-config-htmlacademy": "0.6.x",
@@ -61,6 +64,7 @@
   },
   "dependencies": {
     "del": "^4.1.1",
+    "nouislider": "^14.6.3",
     "swiper": "^6.4.12"
   }
 }

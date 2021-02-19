@@ -2,6 +2,18 @@
   line-height: 0;
 }
 
+.logo svg:hover,
+.logo svg:focus {
+  @include animation;
+  color: $color-main-black;
+}
+
+.logo svg:active {
+  @include animation;
+  color: $color-main-black;
+  opacity: 0.5;
+}
+
 .logo__img {
   width: 66px;
   height: 66px;

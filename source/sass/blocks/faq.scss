@@ -86,11 +86,3 @@
   @include animation;
   transform: rotate(180deg);
 }
-
-.faq--nojs p {
-  display: inline-block;
-}
-
-.faq--nojs .btn__faq {
-  display: none;
-}
