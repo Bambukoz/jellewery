@@ -94,15 +94,15 @@
       </section>
       <section class="main__container main__container--catalog main__container--nojs js-main-container">
         <h2 class="visually-hidden">Catalog</h2>
-        <button class="btn btn__filter btn__filter--main" aria-label="Open filter">Filter</button>
-        <aside class="filter">
+        <button class="btn btn__filter btn__filter--main js-btn-filter-open" aria-label="Open filter">Filter</button>
+        <aside class="filter js-filter">
           <form class="filter__form js-accordion js-filter-form js-accordion--nojs" action="https://echo.htmlacademy.ru" method="post">
-            <button class="btn btn__close" aria-label="Close filter">
+            <button class="btn btn__close js-btn-filter-close" type="button" aria-label="Close filter">
               <svg class="btn btn__filter-icon" width="14" height="14">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="filter__item filter__item--active js-accordion-item" data-class="filter__item">
+            <div class="filter__item js-accordion-item" data-class="filter__item">
               <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
                 <svg class="btn btn__filter-icon" width="17" height="10">
                   <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
@@ -164,7 +164,7 @@
                 </label>
               </div>
             </div>
-            <div class="filter__item filter__item--range filter__item--active js-accordion-item" data-class="filter__item">
+            <div class="filter__item filter__item--range js-accordion-item" data-class="filter__item">
               <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
                 <svg class="btn btn__filter-icon" width="17" height="10">
                   <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>

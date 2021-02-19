@@ -177,6 +177,16 @@
 .btn__accordion--catalog svg {
   top: 28px;
   right: 23px;
+
+  @include tablet {
+    top: 37px;
+    right: 39px;
+  }
+
+  @include mobile {
+    top: 28px;
+    right: 19px;
+  }
 }
 
 .btn__accordion svg:hover,
@@ -203,8 +213,21 @@
   background-color: $color-primary;
   color: $color-white;
 
+  @include tablet {
+    width: 85.5%;
+    margin-left: 21px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+  }
+
   &--submit {
     margin-bottom: 25px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &--reset {
@@ -216,8 +239,11 @@
     display: none;
 
     @include tablet {
+      width: 100%;
       display: block;
       margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @include mobile {
@@ -272,8 +298,8 @@
 
   @include tablet {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -18px;
+    right: -16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,6 +307,12 @@
     height: 32px;
     border-radius: 50%;
     background-color: $color-main-black;
+    z-index: 10;
+  }
+
+  @include mobile {
+    top: -16px;
+    right: -10px;
   }
 }
 

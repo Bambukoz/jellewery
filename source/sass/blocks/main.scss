@@ -261,16 +261,34 @@
   justify-content: center;
 }
 
-.main--catalog--nojs .filter {
+.main__container--nojs .filter {
   @include tablet {
     position: static;
-    display: flex;
     width: 100%;
+    display: flex;
     margin-bottom: 50px;
   }
 }
 
-.main--catalog--nojs .btn__filter--main {
+.main__container--nojs .filter__form {
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.main__container--nojs .btn__accordion {
+  display: none;
+}
+
+.main__container--nojs .filter__inputs {
+  display: flex;
+}
+
+.main__container--nojs .btn__close {
+  display: none;
+}
+
+.main__container--nojs .btn__filter--main {
   @include tablet {
     display: none;
   }

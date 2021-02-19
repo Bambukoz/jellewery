@@ -21,6 +21,12 @@
   border-radius: 50%;
   box-shadow: none;
   background-color: $color-primary;
+
+  @include tablet {
+    width: 18px;
+    height: 18px;
+    top: -8px;
+  }
 }
 
 .noUi-handle::after,
@@ -36,4 +42,10 @@
   background-color: transparent;
   border: none;
   color: $color-main-black;
+
+  @include tablet {
+    font-size: 15px;
+    line-height: 18px;
+    bottom: -31px;
+  }
 }
