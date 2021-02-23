@@ -61,6 +61,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  margin-bottom: 0;
 }
 
 .form__submit input {
@@ -70,10 +71,11 @@
   border-bottom: 1px solid $color-white;
   border-radius: 0;
   font-size: 14px;
+  line-height: 17px;
   color: $color-white;
   background-color: transparent;
   outline-offset: 3px;
-  padding: 8px 103px 11px 1px;
+  padding: 8px 103px 10px 1px;
 
   &::placeholder {
     color: $color-gray;
@@ -89,4 +91,40 @@
 .btn__submit:active .btn__submit {
   @include animation;
   opacity: 1;
+}
+
+
+.form__login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form__login input {
+  border-color: $color-main-black;
+  color: $color-main-black;
+  padding-right: 1px;
+  margin-bottom: 29px;
+
+  @include mobile {
+    margin-bottom: 24px;
+  }
+}
+
+.form__login input:last-of-type {
+  margin-bottom: 5px;
+}
+
+.form__login a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-gray;
+  margin-left: auto;
+  margin-bottom: 45px;
+
+  @include mobile {
+    margin-bottom: 35px;
+  }
 }

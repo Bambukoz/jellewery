@@ -19,6 +19,7 @@ var del = require('del');
 var ghPages = require('gh-pages');
 var webpack = require('webpack-stream');
 var concat = require('gulp-concat');
+// var uglify = require('gulp-uglify');
 
 var isDev = true;
 
@@ -116,6 +117,7 @@ gulp.task('js', function () {
 gulp.task('vendor', function () {
   return gulp.src('source/js/vendor/*.js')
     .pipe(concat('vendor.js'))
+    // .pipe(uglify())
     .pipe(gulp.dest('build/js'));
 });
 

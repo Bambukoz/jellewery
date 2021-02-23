@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Expensive jewelry store">
+    <title>Проект Акселератора - "Jewellery"</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font">
+    <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font">
+    <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-regular.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font">
+    <link rel="preload" href="fonts/poppins-bold.woff2" as="font">
+  </head>
+  <body>
+    <main class="overlay overlay--active">
+      <div class="modal modal--add modal--active js-modal">
+        <section class="modal__add-to-cart ">
+          <h2>The item was added to&nbsp;your cart</h2>
+          <div class="modal__container modal__container--product">
+            <div class="modal__img">
+              <picture>
+                <!-- 1x: 70px; 2x: 140px -->
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/product-card/necklace-detail-small-mobile@1x.webp, img/jpg/product-card/necklace-detail-small-mobile@2x.webp 2x">
+                <!-- 1x: 88px; 2x: 176px -->
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/product-card/necklace-detail-small-tablet@1x.webp, img/jpg/product-card/necklace-detail-small-tablet@2x.webp 2x">
+                <!-- 1x: 84px; 2x: 168px -->
+                <source type="image/webp" srcset="img/jpg/product-card/necklace-detail-small-desktop@1x.webp, img/jpg/product-card/necklace-detail-small-desktop@2x.webp 2x">
+                <!-- 1x: 84px; 2x: 168px -->
+                <img width="84" height="79" src="img/jpg/product-card/necklace-detail-small-desktop@1x.jpg" srcset="img/jpg/product-card/necklace-detail-small-desktop@2x.jpg 2x" alt="Purple gemstone necklace">
+              </picture>
+            </div>
+            <div class="modal__container">
+              <div class="modal__product">
+                <h3>Gold Necklace</h3>
+                <p>$ 115</p>
+              </div>
+              <div class="modal__counter">
+                <button class="btn btn__counter btn__counter--plus" type="button" aria-label="Count plus">
+                  <svg width="14" height="14">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+                <span id="count-value">1</span>
+                <button class="btn btn__counter btn__counter--minus" type="button" aria-label="Count minus">
+                  <svg width="14" height="2">
+                    <use xlink:href="img/sprite.svg#icon-minus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__container modal__container--subtotal">
+            <p>You have 1 item in the cart</p>
+            <span>Cart subtotal: $ <span id="modal-price">115</span></span>
+          </div>
+          <div class="modal__container modal__container--btn">
+            <a class="btn btn__filter btn__modal btn__modal--catalog" href="catalog.html">Continue shopping</a>
+            <a class="btn btn__filter btn__modal btn__modal--cart" href="#">Checkout</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

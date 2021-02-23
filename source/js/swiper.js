@@ -1,4 +1,4 @@
-(() => {
+const swiper = () => {
   const swiperBlock = document.querySelector('.js-swiper');
 
   if (swiperBlock) {
@@ -51,4 +51,6 @@
     });
     swiper.init();
   }
-})();
+};
+
+export default swiper;

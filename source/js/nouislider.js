@@ -1,4 +1,4 @@
-(() => {
+const slider = () => {
   const filterForm = document.querySelector('.js-filter-form');
   const slider = document.querySelector('#slider');
   const minValueInput = document.querySelector('#min-value');
@@ -33,5 +33,6 @@
       slider.noUiSlider.set([55, 155]);
     });
   }
+}
 
-})();
+export default slider;

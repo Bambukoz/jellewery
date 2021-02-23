@@ -48,6 +48,7 @@
 
     @include mobile {
       width: 50%;
+      min-height: 241px;
     }
   }
 
@@ -87,6 +88,19 @@
 
 .channel__item img {
   @include mobile {
-    width: auto;
+    width: 100%;
+  }
+}
+
+.channel__item--third .channel__img {
+  @include mobile {
+    padding-right: 15px;
+  }
+}
+
+.channel__item--second img {
+  @include mobile {
+    min-height: 225px;
+    object-fit: cover;
   }
 }

@@ -99,6 +99,10 @@
   }
 }
 
+.main__container--products > h2 {
+  letter-spacing: normal;
+}
+
 .main__container--faq > h2 {
   margin-bottom: 48px;
 
@@ -126,7 +130,21 @@
   }
 }
 
+.main__container--blog > h2 {
+  margin-bottom: 17px;
+
+  @include tablet {
+    margin-bottom: 19px;
+  }
+
+  @include mobile {
+    margin-bottom: 18px;
+  }
+}
+
 .main__container--blog > a {
+  margin-bottom: 64px;
+
   @include tablet {
     margin-bottom: 60px;
   }
@@ -136,8 +154,16 @@
   }
 }
 
+.main__container--channel > h2 {
+  margin-bottom: 29px;
+
+  @include tablet {
+    margin-bottom: 19px;
+  }
+}
+
 .main__container--channel > a {
-  margin-bottom: 68px;
+  margin-bottom: 64px;
 
   @include tablet {
     margin-bottom: 60px;
@@ -258,6 +284,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -291,5 +318,79 @@
 .main__container--nojs .btn__filter--main {
   @include tablet {
     display: none;
+  }
+}
+
+.main__container--nojs .products__item--catalog {
+  margin-right: 30px;
+  margin-bottom: 36px;
+
+  @media (max-width: 1343px) {
+    margin-right: 22px;
+  }
+
+  @include tablet {
+    margin-bottom: 36px;
+    margin-right: 23px;
+  }
+
+  @include mobile {
+    width: 46%;
+    margin-bottom: 26px;
+  }
+}
+
+//####### Product Card
+
+.main__container--product-card {
+  min-height: 747px;
+  padding-top: 50px;
+
+  @include tablet {
+    min-height: 700px;
+    padding-top: 35px;
+    padding-bottom: 32px;
+  }
+
+  @include mobile {
+    min-height: 450px;
+    padding-top: 21px;
+    padding-bottom: 33px;
+  }
+}
+
+.main__container--product-card .btn__slider {
+  top: 91px;
+
+  @include tablet {
+    top: 74px;
+  }
+}
+
+.main__container--product-card .products__item > a {
+  @include tablet {
+    margin-bottom: 21px;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+
+.main__container--product-card .products__item > p {
+  @include tablet {
+    margin-bottom: 6px;
+  }
+}
+
+.main__container--product-card .products__list {
+  margin-bottom: 47px;
+
+  @include tablet {
+    margin-bottom: 38px;
+  }
+
+  @include mobile {
+    margin-bottom: 33px;
   }
 }

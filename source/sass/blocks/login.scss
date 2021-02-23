@@ -1,0 +1,138 @@
+.login {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  min-height: 586px;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color-secondary;
+  box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
+
+  @include tablet {
+    width: 441px;
+  }
+
+  @include mobile {
+    top: 5%;
+    width: 270px;
+    min-height: 470px;
+  }
+}
+
+.login__success {
+  display: none;
+
+  &--active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-white;
+  }
+}
+
+.login__container {
+  width: 79%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 77.5%;
+  }
+
+  @include mobile {
+    width: 89%;
+  }
+}
+
+.login__container h2 {
+  @include style-reset;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 27px;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 21px;
+  }
+}
+
+.login__lead {
+  height: 138px;
+  background-image: url("../img/jpg/bg/bg-login-desktop@1x.webp");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-primary;
+  margin-bottom: 50px;
+
+  @include retina {
+    background-image: url("../img/jpg/bg/bg-login-desktop@2x.webp");
+  }
+
+  @include tablet {
+    background-image: url("../img/jpg/bg/bg-login-tablet@1x.webp");
+
+    @include retina {
+      background-image: url("../img/jpg/bg/bg-login-tablet@2x.webp");
+    }
+  }
+
+  @include mobile {
+    height: 84px;
+    background-image: url("../img/jpg/bg/bg-login-mobile@1x.webp");
+    margin-bottom: 37px;
+
+    @include retina {
+      background-image: url("../img/jpg/bg/bg-login-mobile@2x.webp");
+    }
+  }
+}
+
+.login__registration {
+  width: 69%;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 66%;
+  }
+
+  @include mobile {
+    width: 94%;
+  }
+}
+
+.login__registration p {
+  @include style-reset;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-gray;
+  margin-right: 9px;
+
+  @include tablet {
+    margin-right: 5px;
+  }
+}
+
+.login__registration a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-main-black;
+}
