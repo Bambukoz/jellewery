@@ -14,13 +14,10 @@
     <link rel="preload" href="fonts/poppins-medium.woff2" as="font">
     <link rel="preload" href="fonts/poppins-bold.woff2" as="font">
   </head>
-  <body>
+  <body class="page js-page">
     <main class="overlay overlay--active">
       <div class="modal modal--login modal--active js-modal-login">
         <section class="login">
-          <div class="login__success js-success">
-            <p>Welcome!</p>
-          </div>
           <div class="login__lead"></div>
           <div class="login__container">
             <h2>Log In</h2>
@@ -30,17 +27,12 @@
               <label class="visually-hidden" for="password"></label>
               <input id="password" name="password" type="password" placeholder="Password" required="">
               <a href="#">Forgot your password?</a>
-              <button class="btn btn__filter btn__filter--login" type="submit">Log In</button>
+              <button class="btn btn__large btn__large--login" type="submit">Log In</button>
             </form>
             <div class="login__registration">
               <p>Don’t have an account?</p>
               <a href="#">Sign up</a>
             </div>
-            <button class="btn btn__close btn__close--modal btn__close--login js-modal-close" type="button" aria-label="Close Login">
-              <svg class="btn btn__filter-icon" width="14" height="14">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
           </div>
         </section>
       </div>
