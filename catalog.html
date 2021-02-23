@@ -25,7 +25,7 @@
         </button>
         <form class="form form__search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search">Type here to search</label>
-          <input id="search" type="search" placeholder="Type here to search">
+          <input id="search" type="search" name="search" placeholder="Type here to search">
           <button class="btn btn__search" type="submit" aria-label="Search">
             <svg class="btn btn__img" width="14" height="14">
               <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -39,7 +39,7 @@
         </a>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__item--login">
-            <a href="#">Login</a>
+            <a class="js-login" href="login.html">Login</a>
           </li>
           <li class="user-nav__item user-nav__item--cart">
             <a href="#" aria-label="Cart">
@@ -81,7 +81,7 @@
               <a href="#">Contact Us</a>
             </li>
             <li class="nav__item nav__item--login">
-              <a href="#">Login</a>
+              <a class="js-login" href="login.html">Login</a>
             </li>
           </ul>
         </nav>
@@ -94,15 +94,15 @@
       </section>
       <section class="main__container main__container--catalog main__container--nojs js-main-container">
         <h2 class="visually-hidden">Catalog</h2>
-        <button class="btn btn__filter btn__filter--main" aria-label="Open filter">Filter</button>
-        <aside class="filter">
+        <button class="btn btn__filter btn__filter--main js-btn-filter-open" aria-label="Open filter">Filter</button>
+        <aside class="filter js-filter">
           <form class="filter__form js-accordion js-filter-form js-accordion--nojs" action="https://echo.htmlacademy.ru" method="post">
-            <button class="btn btn__close" aria-label="Close filter">
+            <button class="btn btn__close js-btn-filter-close" type="button" aria-label="Close filter">
               <svg class="btn btn__filter-icon" width="14" height="14">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="filter__item filter__item--active js-accordion-item" data-class="filter__item">
+            <div class="filter__item js-accordion-item" data-class="filter__item">
               <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
                 <svg class="btn btn__filter-icon" width="17" height="10">
                   <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
@@ -154,8 +154,8 @@
               </button>
               <h3>Collection</h3>
               <div class="filter__inputs">
-                <label for="pinkFlamingo">
-                  <input id="pinkFlamingo" name="pink flamingo" type="checkbox" checked="">
+                <label for="pink-flamingo">
+                  <input id="pink-flamingo" name="pink flamingo" type="checkbox" checked="">
                   <span>Pink flamingo</span>
                 </label>
                 <label for="dreams">
@@ -164,7 +164,7 @@
                 </label>
               </div>
             </div>
-            <div class="filter__item filter__item--range filter__item--active js-accordion-item" data-class="filter__item">
+            <div class="filter__item filter__item--range js-accordion-item" data-class="filter__item">
               <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
                 <svg class="btn btn__filter-icon" width="17" height="10">
                   <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
@@ -190,7 +190,7 @@
         <div class="products products--catalog">
           <ul class="products__list products__list--catalog">
             <li class="products__item products__item--catalog">
-              <a href="#">
+              <a href="product-card.html">
                 <picture>
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/products/double-pearl-earrings-mobile@1x.webp, img/jpg/products/double-pearl-earrings-mobile@2x.webp 2x">
@@ -199,7 +199,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/double-pearl-earrings-desktop@1x.webp, img/jpg/products/double-pearl-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/double-pearl-earrings-desktop@1x.jpg" srcset="img/jpg/products/double-pearl-earrings-desktop@2x.jpg 2x" alt="Double pearl earrings">
+                  <img width="270" height="272" src="img/jpg/products/double-pearl-earrings-desktop@1x.jpg" srcset="img/jpg/products/double-pearl-earrings-desktop@2x.jpg 2x" alt="Double pearl earrings" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Double pearl earrings</p>
@@ -215,7 +215,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/black-choker-gold-bead-desktop@1x.webp, img/jpg/products/black-choker-gold-bead-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpg/products/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead">
+                  <img width="270" height="272" src="img/jpg/products/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpg/products/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Choker with gold&nbsp;bead</p>
@@ -231,7 +231,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/gold-layered-necklace-desktop@1x.webp, img/jpg/products/gold-layered-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/gold-layered-necklace-desktop@1x.jpg" srcset="img/jpg/products/gold-layered-necklace-desktop@2x.jpg 2x" alt="Gold layered necklace">
+                  <img width="270" height="272" src="img/jpg/products/gold-layered-necklace-desktop@1x.jpg" srcset="img/jpg/products/gold-layered-necklace-desktop@2x.jpg 2x" alt="Gold layered necklace" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Gold layered necklace</p>
@@ -247,7 +247,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/blue-gemstone-pendant-desktop@1x.webp, img/jpg/products/blue-gemstone-pendant-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/blue-gemstone-pendant-desktop@1x.jpg" srcset="img/jpg/products/blue-gemstone-pendant-desktop@2x.jpg 2x" alt="Blue gemstone pendant">
+                  <img width="270" height="272" src="img/jpg/products/blue-gemstone-pendant-desktop@1x.jpg" srcset="img/jpg/products/blue-gemstone-pendant-desktop@2x.jpg 2x" alt="Blue gemstone pendant" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Blue gemstone pendant</p>
@@ -263,7 +263,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/boho-earrings-desktop@1x.webp, img/jpg/products/boho-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/boho-earrings-desktop@1x.jpg" srcset="img/jpg/products/boho-earrings-desktop@2x.jpg 2x" alt="Boho earrings">
+                  <img width="270" height="272" src="img/jpg/products/boho-earrings-desktop@1x.jpg" srcset="img/jpg/products/boho-earrings-desktop@2x.jpg 2x" alt="Boho earrings" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Boho earrings</p>
@@ -279,7 +279,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/bird-necklace-desktop@1x.webp, img/jpg/products/bird-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/bird-necklace-desktop@1x.jpg" srcset="img/jpg/products/bird-necklace-desktop@2x.jpg 2x" alt="Gold bird necklace">
+                  <img width="270" height="272" src="img/jpg/products/bird-necklace-desktop@1x.jpg" srcset="img/jpg/products/bird-necklace-desktop@2x.jpg 2x" alt="Gold bird necklace" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Gold bird necklace</p>
@@ -295,7 +295,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/black-leather-choker-necklace-desktop@1x.webp, img/jpg/products/black-leather-choker-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/black-leather-choker-necklace-desktop@1x.jpg" srcset="img/jpg/products/black-leather-choker-necklace-desktop@2x.jpg 2x" alt="Black leather choker">
+                  <img width="270" height="272" src="img/jpg/products/black-leather-choker-necklace-desktop@1x.jpg" srcset="img/jpg/products/black-leather-choker-necklace-desktop@2x.jpg 2x" alt="Black leather choker" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Black leather choker</p>
@@ -311,7 +311,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/purple-gemstone-necklace-desktop@1x.webp, img/jpg/products/purple-gemstone-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/purple-gemstone-necklace-desktop@1x.jpg" srcset="img/jpg/products/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace">
+                  <img width="270" height="272" src="img/jpg/products/purple-gemstone-necklace-desktop@1x.jpg" srcset="img/jpg/products/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Necklace with amethyst</p>
@@ -327,7 +327,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/elephant-earrings-desktop@1x.webp, img/jpg/products/elephant-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/elephant-earrings-desktop@1x.jpg" srcset="img/jpg/products/elephant-earrings-desktop@2x.jpg 2x" alt="Elephant earrings">
+                  <img width="270" height="272" src="img/jpg/products/elephant-earrings-desktop@1x.jpg" srcset="img/jpg/products/elephant-earrings-desktop@2x.jpg 2x" alt="Elephant earrings" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Elephant earrings</p>
@@ -343,7 +343,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/threader-necklace-closeup-desktop@1x.webp, img/jpg/products/threader-necklace-closeup-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/threader-necklace-closeup-desktop@1x.jpg" srcset="img/jpg/products/threader-necklace-closeup-desktop@2x.jpg 2x" alt="Threader necklace">
+                  <img width="270" height="272" src="img/jpg/products/threader-necklace-closeup-desktop@1x.jpg" srcset="img/jpg/products/threader-necklace-closeup-desktop@2x.jpg 2x" alt="Threader necklace" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Threader necklace</p>
@@ -359,7 +359,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/origami-crane-necklace-desktop@1x.webp, img/jpg/products/origami-crane-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/origami-crane-necklace-desktop@1x.jpg" srcset="img/jpg/products/origami-crane-necklace-desktop@2x.jpg 2x" alt="Origami crane necklace">
+                  <img width="270" height="272" src="img/jpg/products/origami-crane-necklace-desktop@1x.jpg" srcset="img/jpg/products/origami-crane-necklace-desktop@2x.jpg 2x" alt="Origami crane necklace" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Origami crane necklace</p>
@@ -375,7 +375,7 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpg/products/marble-earrings-desktop@1x.webp, img/jpg/products/marble-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="272" src="img/jpg/products/marble-earrings-desktop@1x.jpg" srcset="img/jpg/products/marble-earrings-desktop@2x.jpg 2x" alt="Marble earrings">
+                  <img width="270" height="272" src="img/jpg/products/marble-earrings-desktop@1x.jpg" srcset="img/jpg/products/marble-earrings-desktop@2x.jpg 2x" alt="Marble earrings" loading="lazy" decoding="async">
                 </picture>
               </a>
               <p>Marble earrings</p>
@@ -400,13 +400,13 @@
     <footer class="page__footer footer">
       <div class="footer__wrapper">
         <div class="footer__container footer__container--submit">
-          <h2>The good stuff in your inbox </h2>
+          <h2><span>The</span> good stuff in your inbox </h2>
           <p>News and updates from CH. No spam, we promise.</p>
-          <form class="form form__submit" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="submit"></label>
-            <input id="submit" type="email" name="email" placeholder="Your E-mail" required="">
+          <form class="form form__submit js-submit-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="userEmail"></label>
+            <input id="userEmail" type="email" name="email" placeholder="Your E-mail" required="">
             <button class="btn btn__submit" type="submit">
-              Sign Up
+              <span>Sign Up</span>
               <svg width="30" height="11">
                 <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
               </svg>
@@ -481,21 +481,31 @@
         </div>
       </div>
     </footer>
-    <!--    <section class="login login--modal js-modal">-->
-    <!--      <div class="login__success">-->
-    <!--        <p>Добро пожаловать :)</p>-->
-    <!--      </div>-->
-    <!--      <h2>LogIn</h2>-->
-    <!--      <form class="form form&#45;&#45;modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">-->
-    <!--        <label class="visually-hidden" for="modalEmail"></label>-->
-    <!--        <input id="modalEmail" name="email" type="email" placeholder="Имя" required>-->
-    <!--        <label class="visually-hidden" for="modalPassword"></label>-->
-    <!--        <input id="modalPassword" name="password" type="password" placeholder="Имя" required>-->
-    <!--        <button class="btn btn__submit btn__modal" type="submit">Отправить</button>-->
-    <!--      </form>-->
-    <!--      <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>-->
-    <!--    </section>-->
-    <!--    <div class="overlay js-overlay"></div>-->
+    <div class="modal modal--login js-modal-login">
+      <section class="login">
+        <div class="login__lead"></div>
+        <div class="login__container">
+          <h2>Log In</h2>
+          <form class="form form__submit form__login js-form-login">
+            <label class="visually-hidden" for="email"></label>
+            <input id="email" name="email" type="email" placeholder="Your E-mail" required="">
+            <label class="visually-hidden" for="password"></label>
+            <input id="password" name="password" type="password" placeholder="Password" required="">
+            <a href="#">Forgot your password?</a>
+            <button class="btn btn__filter btn__filter--login" type="submit">Log In</button>
+          </form>
+          <div class="login__registration">
+            <p>Don’t have an account?</p>
+            <a href="#">Sign up</a>
+          </div>
+          <button class="btn btn__close btn__close--modal btn__close--login js-login-close" type="button" aria-label="Close Login">
+            <svg class="btn btn__filter-icon" width="14" height="14">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -2693,44 +2693,6 @@
 });
 
 (() => {
-  const filterForm = document.querySelector('.js-filter-form');
-  const slider = document.querySelector('#slider');
-  const minValueInput = document.querySelector('#min-value');
-  const maxValueInput = document.querySelector('#max-value');
-
-  if (slider) {
-    noUiSlider.create(slider, {
-      start: [55, 155],
-      step: 1,
-      connect: true,
-      tooltips: [true, true],
-      range: {
-        'min': [0],
-        'max': [200],
-      },
-      format: {
-        to(value) {
-          return `$ ${Math.round(value)}`;
-        },
-        from(value) {
-          return value;
-        },
-      },
-    });
-
-    slider.noUiSlider.on('update', function (values) {
-      minValueInput.value = Number(values[0].replace(/\u0024/g, ''));
-      maxValueInput.value = Number(values[1].replace(/\u0024/g, ''));
-    });
-
-    filterForm.addEventListener('reset', function () {
-      slider.noUiSlider.set([55, 155]);
-    });
-  }
-
-})();
-
-(() => {
   const smoothLinks = document.querySelectorAll('a[href^="#"]');
   for (const smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', (evt) => {
@@ -12270,58 +12232,3 @@
 
 })));
 //# sourceMappingURL=swiper-bundle.js.map
-
-(() => {
-  const swiperBlock = document.querySelector('.js-swiper');
-
-  if (swiperBlock) {
-    const swiper = new Swiper('.js-swiper', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      slidesPerGroup: 4,
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 30,
-          pagination: {
-            el: '.products__pagination',
-            type: 'custom',
-            renderCustom(swiper, current, total) {
-              return `${current}&ensp;of&ensp;${total}`;
-            },
-          },
-        },
-        768: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          pagination: {
-            el: '.products__pagination',
-            clickable: true,
-            type: 'bullets',
-            renderBullet(index, className) {
-              return '<button class="' + className + '" type="button" aria-label="Slide ' + (index + 1) + '">' + (index + 1) + '</button>';
-            },
-          },
-        },
-        1024: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          pagination: {
-            el: '.products__pagination',
-            clickable: true,
-            type: 'bullets',
-            renderBullet(index, className) {
-              return '<button class="' + className + '" type="button" aria-label="Slide ' + (index + 1) + '">' + (index + 1) + '</button>';
-            },
-          },
-        },
-      },
-      navigation: {
-        nextEl: '.btn__slider--right',
-        prevEl: '.btn__slider--left',
-      },
-    });
-    swiper.init();
-  }
-})();
