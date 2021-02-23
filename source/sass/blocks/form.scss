@@ -33,27 +33,27 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
 
-  &::-webkit-search-cancel-button {
-    appearance: none;
-    background-image: url("../img/svg/icon-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px;
-    width: 12px;
-    height: 12px;
+.form__search input::-webkit-search-cancel-button {
+  appearance: none;
+  background-image: url("../img/svg/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
 
-    @include tablet {
-      display: none;
-    }
+  @include tablet {
+    display: none;
   }
+}
 
-  &::placeholder {
-    color: $color-gray;
+.form__search input::placeholder {
+  color: $color-gray;
 
-    @include tablet {
-      visibility: hidden;
-    }
+  @include tablet {
+    visibility: hidden;
   }
 }
 
@@ -76,11 +76,12 @@
   background-color: transparent;
   outline-offset: 3px;
   padding: 8px 103px 10px 1px;
-
-  &::placeholder {
-    color: $color-gray;
-  }
 }
+
+.form__submit input::placeholder {
+  color: $color-gray;
+}
+
 
 .form__submit:hover .btn__submit {
   @include animation;
@@ -127,4 +128,16 @@
   @include mobile {
     margin-bottom: 35px;
   }
+}
+
+.form__login a:hover,
+.form__login a:focus {
+  @include animation;
+  opacity: 0.7;
+}
+
+.form__login a:active {
+  @include animation;
+  opacity: 1;
+  color: $color-main-black;
 }

@@ -143,7 +143,7 @@
 }
 
 .main__container--blog > a {
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 
   @include tablet {
     margin-bottom: 60px;
@@ -176,14 +176,14 @@
 
 //######## interactive
 
-.main__container a:hover,
-.main__container a:focus {
+.main__container > a:hover,
+.main__container > a:focus {
   @include animation;
   color: $color-primary;
   border-color: $color-main-black;
 }
 
-.main__container a:active {
+.main__container > a:active {
   @include animation;
   color: $color-main-black;
 }
@@ -201,20 +201,21 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+}
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.main__container--nojs .products__list::-webkit-scrollbar {
+  display: none;
 }
 
 .main__container--nojs .products__item {
   margin-right: 30px;
   scroll-snap-align: start;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
+
+.main__container--nojs .products__item:last-child {
+  margin-right: 0;
+}
+
 
 .main__container--nojs .products__pagination {
   display: none;
@@ -347,13 +348,13 @@
   padding-top: 50px;
 
   @include tablet {
-    min-height: 700px;
+    min-height: 718px;
     padding-top: 35px;
     padding-bottom: 32px;
   }
 
   @include mobile {
-    min-height: 450px;
+    min-height: 487px;
     padding-top: 21px;
     padding-bottom: 33px;
   }

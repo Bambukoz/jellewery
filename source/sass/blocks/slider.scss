@@ -21,6 +21,7 @@
   border-radius: 50%;
   box-shadow: none;
   background-color: $color-primary;
+  cursor: pointer;
 
   @include tablet {
     width: 18px;
@@ -28,6 +29,16 @@
     top: -8px;
   }
 }
+
+.noUi-horizontal .noUi-handle:hover,
+.noUi-horizontal .noUi-handle:focus {
+  filter: grayscale(0.8);
+}
+
+.noUi-horizontal .noUi-handle:active {
+  filter: grayscale(0);
+}
+
 
 .noUi-handle::after,
 .noUi-handle::before {

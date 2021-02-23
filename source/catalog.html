@@ -94,7 +94,7 @@
       </section>
       <section class="main__container main__container--catalog main__container--nojs js-main-container">
         <h2 class="visually-hidden">Catalog</h2>
-        <button class="btn btn__filter btn__filter--main js-btn-filter-open" aria-label="Open filter">Filter</button>
+        <button class="btn btn__large btn__large--main js-btn-filter-open" aria-label="Open filter">Filter</button>
         <aside class="filter js-filter">
           <form class="filter__form js-accordion js-filter-form js-accordion--nojs" action="https://echo.htmlacademy.ru" method="post">
             <button class="btn btn__close js-btn-filter-close" type="button" aria-label="Close filter">
@@ -102,89 +102,91 @@
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="filter__item js-accordion-item" data-class="filter__item">
-              <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
-                <svg class="btn btn__filter-icon" width="17" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
-                </svg>
-              </button>
-              <h3>Product</h3>
-              <div class="filter__inputs">
-                <label for="necklaces">
-                  <input id="necklaces" name="necklaces" type="checkbox" checked>
-                  <span>Necklaces</span>
-                </label>
-                <label for="chokers">
-                  <input id="chokers" name="chokers" type="checkbox" checked>
-                  <span>Chokers</span>
-                </label>
-                <label for="rings">
-                  <input id="rings" name="rings" type="checkbox">
-                  <span>Rings</span>
-                </label>
-                <label for="earrings">
-                  <input id="earrings" name="earrings" type="checkbox" checked>
-                  <span>Earrings</span>
-                </label>
-              </div>
-            </div>
-            <div class="filter__item js-accordion-item" data-class="filter__item">
-              <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
-                <svg class="btn btn__filter-icon" width="17" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
-                </svg>
-              </button>
-              <h3>Material</h3>
-              <div class="filter__inputs">
-                <label for="gold">
-                  <input id="gold" name="gold" type="checkbox" checked>
-                  <span>Gold</span>
-                </label>
-                <label for="silver">
-                  <input id="silver" name="silver" type="checkbox">
-                  <span>Silver</span>
-                </label>
-              </div>
-            </div>
-            <div class="filter__item js-accordion-item" data-class="filter__item">
-              <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
-                <svg class="btn btn__filter-icon" width="17" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
-                </svg>
-              </button>
-              <h3>Collection</h3>
-              <div class="filter__inputs">
-                <label for="pink-flamingo">
-                  <input id="pink-flamingo" name="pink flamingo" type="checkbox" checked>
-                  <span>Pink flamingo</span>
-                </label>
-                <label for="dreams">
-                  <input id="dreams" name="dreams" type="checkbox" checked>
-                  <span>Dreams</span>
-                </label>
-              </div>
-            </div>
-            <div class="filter__item filter__item--range js-accordion-item" data-class="filter__item">
-              <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
-                <svg class="btn btn__filter-icon" width="17" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
-                </svg>
-              </button>
-              <h3>Price</h3>
-              <div class="filter__inputs filter__inputs--range filter__inputs--nojs js-range-input">
-                <div id="slider"></div>
-                <label for="min-value">
-                  <span>Minimal price $</span>
-                  <input type="number" name="min" id="min-value" min="0" max="200" value="55">
-                </label>
-                <label for="max-value">
-                  <span>Maximum price $</span>
-                  <input type="number" name="max" id="max-value" min="0" max="200" value="155">
-                </label>
-              </div>
-            </div>
-            <button class="btn btn__filter btn__filter--submit" type="submit">Apply</button>
-            <button class="btn btn__filter btn__filter--reset" type="reset">Clear All</button>
+            <ul class="filter__list">
+              <li class="filter__item js-accordion-item" data-class="filter__item">
+                <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
+                  <svg class="btn btn__filter-icon" width="17" height="10">
+                    <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </button>
+                <h3>Product</h3>
+                <div class="filter__inputs">
+                  <label for="necklaces">
+                    <input id="necklaces" name="necklaces" type="checkbox" checked>
+                    <span>Necklaces</span>
+                  </label>
+                  <label for="chokers">
+                    <input id="chokers" name="chokers" type="checkbox" checked>
+                    <span>Chokers</span>
+                  </label>
+                  <label for="rings">
+                    <input id="rings" name="rings" type="checkbox">
+                    <span>Rings</span>
+                  </label>
+                  <label for="earrings">
+                    <input id="earrings" name="earrings" type="checkbox" checked>
+                    <span>Earrings</span>
+                  </label>
+                </div>
+              </li>
+              <li class="filter__item js-accordion-item" data-class="filter__item">
+                <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
+                  <svg class="btn btn__filter-icon" width="17" height="10">
+                    <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </button>
+                <h3>Material</h3>
+                <div class="filter__inputs">
+                  <label for="gold">
+                    <input id="gold" name="gold" type="checkbox" checked>
+                    <span>Gold</span>
+                  </label>
+                  <label for="silver">
+                    <input id="silver" name="silver" type="checkbox">
+                    <span>Silver</span>
+                  </label>
+                </div>
+              </li>
+              <li class="filter__item js-accordion-item" data-class="filter__item">
+                <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
+                  <svg class="btn btn__filter-icon" width="17" height="10">
+                    <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </button>
+                <h3>Collection</h3>
+                <div class="filter__inputs">
+                  <label for="pink-flamingo">
+                    <input id="pink-flamingo" name="pink flamingo" type="checkbox" checked>
+                    <span>Pink flamingo</span>
+                  </label>
+                  <label for="dreams">
+                    <input id="dreams" name="dreams" type="checkbox" checked>
+                    <span>Dreams</span>
+                  </label>
+                </div>
+              </li>
+              <li class="filter__item filter__item--range js-accordion-item" data-class="filter__item">
+                <button class="btn btn__accordion btn__accordion--catalog js-btn-accordion" type="button" aria-label="Open or close filter">
+                  <svg class="btn btn__filter-icon" width="17" height="10">
+                    <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </button>
+                <h3>Price</h3>
+                <div class="filter__inputs filter__inputs--range filter__inputs--nojs js-range-input">
+                  <div id="slider"></div>
+                  <label for="min-value">
+                    <span>Minimal price $</span>
+                    <input type="number" name="min" id="min-value" min="0" max="200" value="55">
+                  </label>
+                  <label for="max-value">
+                    <span>Maximum price $</span>
+                    <input type="number" name="max" id="max-value" min="0" max="200" value="155">
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn__large btn__large--submit" type="submit">Apply</button>
+            <button class="btn btn__large btn__large--reset" type="reset">Clear All</button>
           </form>
         </aside>
         <div class="products products--catalog">
@@ -492,7 +494,7 @@
             <label class="visually-hidden" for="password"></label>
             <input id="password" name="password" type="password" placeholder="Password" required>
             <a href="#">Forgot your password?</a>
-            <button class="btn btn__filter btn__filter--login" type="submit">Log In</button>
+            <button class="btn btn__large btn__large--login" type="submit">Log In</button>
           </form>
           <div class="login__registration">
             <p>Don’t have an account?</p>

@@ -5,16 +5,13 @@
   flex-direction: column;
   overflow: hidden;
   padding: 0 2px;
-  margin-bottom: 48px;
 
   @include tablet {
     padding: 0 5px;
-    margin-bottom: 38px;
   }
 
   @include mobile {
     padding: 0 15px;
-    margin-bottom: 32px;
   }
 }
 
@@ -22,6 +19,15 @@
   @include list-reset;
   width: 100%;
   display: flex;
+  margin-bottom: 46px;
+
+  @include tablet {
+    margin-bottom: 38px;
+  }
+
+  @include mobile {
+    margin-bottom: 32px;
+  }
 }
 
 .products__list .swiper-slide {
@@ -111,9 +117,23 @@
   }
 }
 
+.products__pagination .swiper-pagination-bullet:hover,
+.products__pagination .swiper-pagination-bullet:focus,
+.main__pagination .swiper-pagination-bullet:hover,
+.main__pagination .swiper-pagination-bullet:focus {
+  opacity: 0.5;
+}
+
 .products__pagination .swiper-pagination-bullet-active,
 .main__pagination .swiper-pagination-bullet-active {
   color: $color-main-black;
+}
+
+.products__pagination .swiper-pagination-bullet-active:hover,
+.products__pagination .swiper-pagination-bullet-active:focus,
+.main__pagination .swiper-pagination-bullet-active:hover,
+.main__pagination .swiper-pagination-bullet-active:focus {
+  opacity: 1;
 }
 
 //###### Catalog

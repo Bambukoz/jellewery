@@ -123,6 +123,39 @@
       left: 6px;
     }
   }
+
+  &--next {
+    width: 67px;
+    top: 6px;
+    right: -15px;
+
+    @include tablet {
+      top: 5px;
+      right: -11px;
+    }
+  }
+
+  &--prev {
+    width: 67px;
+    top: 6px;
+    left: 2px;
+
+    @include tablet {
+      top: 5px;
+      left: 5px;
+    }
+  }
+}
+
+.btn__slider:hover,
+.btn__slider:focus {
+  @include animation;
+  opacity: 0.7;
+}
+
+.btn__slider :active {
+  @include animation;
+  opacity: 1;
 }
 
 .btn__slider svg {
@@ -137,12 +170,12 @@
 .btn__slider svg:hover,
 .btn__slider svg:focus {
   @include animation;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .btn__slider svg:active {
   @include animation;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .btn__accordion {
@@ -155,6 +188,12 @@
   &--catalog {
     height: 60px;
   }
+}
+
+.btn__accordion:hover,
+.btn__accordion:focus,
+.btn__accordion:active {
+  filter: grayscale(1);
 }
 
 .btn__accordion svg {
@@ -208,9 +247,7 @@
   opacity: 0.5;
 }
 
-//###### Catalog
-
-.btn__filter {
+.btn__large {
   width: 100%;
   min-height: 68px;
   display: flex;
@@ -235,11 +272,37 @@
     @include mobile {
       margin-bottom: 20px;
     }
+
+    &:hover,
+    &:focus {
+      @include animation;
+      color: $color-main-black;
+      background-color: $color-white;
+      opacity: 0.7;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
+    }
   }
 
   &--reset {
     background-color: transparent;
     color: $color-main-black;
+
+    &:hover,
+    &:focus {
+      @include animation;
+      color: $color-white;
+      background-color: $color-primary;
+      opacity: 0.7;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
+    }
   }
 
   &--main {
@@ -262,6 +325,47 @@
   &--login {
     width: 100%;
     margin-left: 0;
+
+    &:hover,
+    &:focus {
+      @include animation;
+      background-color: transparent;
+      color: $color-main-black;
+      opacity: 0.7;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
+    }
+  }
+
+  &--buy {
+    margin-bottom: 17px;
+
+    @include tablet {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+
+    @include mobile {
+      margin-bottom: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      @include animation;
+      color: $color-main-black;
+      background-color: $color-white;
+      border-color: $color-main-black;
+      opacity: 0.7;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
+    }
   }
 }
 
@@ -280,29 +384,16 @@
   &--active {
     color: $color-main-black;
   }
-}
 
-.btn__slider {
-  &--next {
-    width: 67px;
-    top: 6px;
-    right: -15px;
-
-    @include tablet {
-      top: 5px;
-      right: -11px;
-    }
+  &:hover,
+  &:focus {
+    @include animation;
+    opacity: 0.7;
   }
 
-  &--prev {
-    width: 67px;
-    top: 6px;
-    left: 2px;
-
-    @include tablet {
-      top: 5px;
-      left: 5px;
-    }
+  &:active {
+    @include animation;
+    opacity: 1;
   }
 }
 
@@ -343,6 +434,17 @@
     @include mobile {
       top: -32px;
       right: -9px;
+    }
+
+    &:hover,
+    &:focus {
+      @include animation;
+      opacity: 0.5;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
     }
   }
 
@@ -387,20 +489,6 @@
   }
 }
 
-.btn__buy {
-  margin-bottom: 17px;
-
-  @include tablet {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  @include mobile {
-    margin-bottom: 12px;
-  }
-}
-
 .btn__counter {
   position: relative;
   width: 26px;
@@ -423,6 +511,17 @@
     @include mobile {
       margin-bottom: 0;
     }
+  }
+
+  &:hover,
+  &:focus {
+    @include animation;
+    opacity: 0.5;
+  }
+
+  &:active {
+    @include animation;
+    opacity: 1;
   }
 }
 
@@ -449,12 +548,37 @@
     margin-bottom: 0;
   }
 
+  &:hover,
+  &:focus {
+    @include animation;
+    background-color: $color-white;
+    color: $color-main-black;
+    opacity: 0.7;
+  }
+
+  &:active {
+    @include animation;
+    opacity: 1;
+  }
+
   &--catalog {
     background-color: transparent;
     color: $color-main-black;
 
     @include mobile {
       margin-bottom: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      @include animation;
+      background-color: $color-primary;
+      color: $color-white;
+    }
+
+    &:active {
+      @include animation;
+      opacity: 1;
     }
   }
 }

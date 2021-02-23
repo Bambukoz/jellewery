@@ -136,3 +136,14 @@
   line-height: 21px;
   color: $color-main-black;
 }
+
+.login__registration a:hover,
+.login__registration a:focus {
+  @include animation;
+  opacity: 0.7;
+}
+
+.login__registration a:active {
+  @include animation;
+  opacity: 1;
+}
