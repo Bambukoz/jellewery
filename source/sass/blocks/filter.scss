@@ -15,19 +15,14 @@
       height: 100%;
       display: flex;
       position: fixed;
-      align-items: flex-start;
       overflow: scroll;
       overflow-scrolling: touch;
       top: 0;
       left: 0;
       background-color: $background-color-primary;
-      padding-top: 29px;
-      z-index: 5;
-    }
-
-    @include mobile {
       align-items: center;
       padding-top: 76px;
+      z-index: 5;
     }
   }
 }
@@ -160,6 +155,7 @@
 .filter__inputs label {
   position: relative;
   margin-bottom: 9px;
+  cursor: pointer;
 
   @include tablet {
     margin-bottom: 17px;
@@ -198,6 +194,7 @@
   width: 15px;
   height: 15px;
   border: 1px solid $color-primary;
+  cursor: pointer;
 
   @include tablet {
     left: 10px;

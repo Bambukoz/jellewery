@@ -13,6 +13,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      height: 100%;
       background-color: $color-primary;
     }
   }
@@ -22,6 +23,12 @@
       background-color: $color-primary;
     }
   }
+
+  &--modal {
+    background-color: $color-white;
+    z-index: 100;
+  }
+
 }
 
 .header__container {

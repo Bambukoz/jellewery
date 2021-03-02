@@ -34,6 +34,14 @@
   &--active {
     display: flex;
   }
+
+  &--modal {
+    padding-top: 10px;
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
 }
 
 .modal__add-to-cart {

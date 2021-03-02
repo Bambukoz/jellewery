@@ -14,6 +14,7 @@ const addModalWindow = () => {
   const overlay = document.querySelector('.js-overlay');
   const addModal = document.querySelector('.js-modal-add');
   const closeModalBtn = document.querySelector('.js-modal-close');
+  const focusElement = document.querySelector('#focus-element');
 
   const onEscModalClose = (evt) => {
     if (evt.key === KeyButton.ESCAPE) {
@@ -41,6 +42,7 @@ const addModalWindow = () => {
     evt.preventDefault();
     overlay.classList.add(pageClass.OVERLAY_ACTIVE);
     addModal.classList.add(pageClass.MODAL_ACTIVE);
+    focusElement.focus();
     page.classList.add(pageClass.PAGE_LOCKED);
     closeModalBtn.addEventListener('click', closeModalHandler);
     overlay.addEventListener('click', overlayClickHandler);
