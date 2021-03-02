@@ -15,7 +15,14 @@
     <link rel="preload" href="fonts/poppins-bold.woff2" as="font">
   </head>
   <body class="page js-page">
-    <main class="overlay overlay--active">
+    <header class="page__header header header--modal">
+      <a class="logo logo--modal" href="index.html" aria-label="CH Logo">
+        <svg class="logo__img" width="66" height="66">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </header>
+    <main class="overlay overlay--active overlay--modal">
       <h1 class="visually-hidden">Login window</h1>
       <div class="modal modal--login modal--active js-modal-login">
         <section class="login">
